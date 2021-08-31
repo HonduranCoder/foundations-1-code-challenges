@@ -1,4 +1,4 @@
-// user Object.values and Object.key to solve these problems!
+// user Object.values and Object.keys to solve these problems!
 
 /*
 Input: 
@@ -23,8 +23,31 @@ etc
 (we cannot control the order that these appear in without extra work, so any of these outputs are acceptable)
 */
 
+/*
+test('should return an object with screaming keys', (expect) => {
+    //Arrange
+    // Set up your arguments and expectations
+    const expected = {
+        NAME: 'scooter',
+        AGE: 1,
+        TYPE: 'puppy'
+    };
+    
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const actual = makeMoreScreamingKeys(pet);
+
+    //Expect
+    // Make assertions about what is expected versus the actual result
+    expect.deepEqual(actual, expected);
+});
+
+
+*/
 export function makeWeirdStringFromKeys(someObject) {
-    return '';
+    const random = Object.keys(someObject);
+    //join
+    return random;
 }
 
 
